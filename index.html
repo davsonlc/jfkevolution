@@ -2,40 +2,158 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>JFK Evolution</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JFK Evolution - Expert en Télécom</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      color: #222;
+      background-color: #f9f9f9;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #00bcd4, #2196f3);
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      color: #bbb;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <img src="assets/logo-blue.png" alt="Logo JFK" width="120" />
+    <h1>JFK Evolution</h1>
     <nav>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="#accueil">Accueil</a>
+      <a href="#services">Services</a>
+      <a href="#clients">Clients</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  <h1>JFK EVOLUTION</h1>
-  <h2>Un expert en Entrepreneur en télécommunication</h2>
-  <p>
-  Depuis 2000, je suis un Entrepreneur en télécommunication renommé à Lyon. Je suis là pour réparer ou transformer tout ce dont vous avez besoin et quand vous en avez besoin.
-  </p>
-  <p>
-  Contactez-moi et voyons ensemble comment vous aider à atteindre vos projets.
-  </p>
 
-  
-<section>
-  <h2>Qui suis-je ?</h2>
-  <p>Depuis 2000, je suis connu pour être l'un des meilleurs Entrepreneur en télécommunication de Lyon.
-  Je fournis à mes clients un large éventail de services pour tous leurs besoins en rénovation et réparation.</p>
-  <p>Que vous cherchiez à rénover votre espace existant ou à y ajouter une extension, je suis heureux de vous aider à atteindre les résultats que vous cherchez.
-  Contactez-moi dès aujourd'hui et obtenez un devis gratuit.</p>
-</section>
+  <section class="hero" id="accueil">
+    <h2>Expert en Télécommunications</h2>
+    <p>Depuis 2000, JFK Evolution fournit des services fiables et professionnels à Lyon et région.</p>
+  </section>
 
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Installation Fibre</h3>
+        <p>Pose et raccordement FTTH/FTTO pour entreprises et particuliers.</p>
+      </div>
+      <div class="card">
+        <h3>Maintenance Réseaux</h3>
+        <p>Diagnostic, optimisation et dépannage des réseaux télécom.</p>
+      </div>
+      <div class="card">
+        <h3>Formations</h3>
+        <p>Sessions personnalisées pour techniciens et professionnels.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Galerie de Travaux</h2>
-  <div style='display:flex;flex-wrap:wrap;gap:20px;'>
-<div style='flex:1 0 30%;'><img src='assets/logo-blue.png' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/logo-orange.png' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-1.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-2.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-3.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-4.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-5.webp' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-6.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fibra-7.jpeg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/foto-consultor.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/renault-master.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/fusionneur.jpg' style='width:100%;max-width:300px;'/></div><div style='flex:1 0 30%;'><img src='assets/switch-jaune.jpg' style='width:100%;max-width:300px;'/></div></div>
-<section>
-  <h2>Nos Clients</h2>
-  <div style="display:flex;flex-wrap:wrap;gap:20px;align-items:center;">
-<div style='flex:1 0 20%;text-align:center;'><img src='assets/client-axione.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-1.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-covage.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-circet.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-ert.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-sobeca.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-sogetrel.avif' style='max-width:150px;max-height:100px;' /></div><div style='flex:1 0 20%;text-align:center;'><img src='assets/client-spie.avif' style='max-width:150px;max-height:100px;' /></div></div></section></body></html>
+  <section id="clients">
+    <h2>Nos Clients</h2>
+    <p>Nous avons travaillé avec des opérateurs, collectivités, et entreprises de renom à travers la France.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contactez-Nous</h2>
+    <p>Email : <a href="mailto:jfkevolution@gmail.com">jfkevolution@gmail.com</a></p>
+    <p>Lyon, France</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JFK Evolution. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
