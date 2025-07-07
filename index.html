@@ -87,6 +87,23 @@
       transform: translateY(-5px);
     }
 
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 1rem 0;
+    }
+
+    .carousel img {
+      height: 100px;
+      object-fit: contain;
+      flex-shrink: 0;
+      border-radius: 6px;
+      background: white;
+      padding: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
     footer {
       background-color: #1e1e1e;
       color: #bbb;
@@ -142,7 +159,13 @@
 
   <section id="clients">
     <h2>Nos Clients</h2>
-    <p>Nous avons travaillé avec des opérateurs, collectivités, et entreprises de renom à travers la France.</p>
+    <div class="carousel">
+      <img src="client1.jpg" alt="Client 1">
+      <img src="client2.jpg" alt="Client 2">
+      <img src="client3.jpg" alt="Client 3">
+      <img src="client4.jpg" alt="Client 4">
+      <img src="client5.jpg" alt="Client 5">
+    </div>
   </section>
 
   <section id="contact">
