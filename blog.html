@@ -1,206 +1,493 @@
 
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Centre d'information - JFK Evolution</title>
-<link href="assets/logo-orange.png" rel="icon" type="image/png"/>
-<style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f6f8;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #1e1e1e;
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #00bcd4;
-    }
-
-    main {
-      max-width: 1100px;
-      margin: auto;
-      padding: 3rem 1rem;
-    }
-
-    h2 {
-      border-bottom: 2px solid #00bcd4;
-      padding-bottom: 0.5rem;
-      margin-top: 3rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-
-    .card-body {
-      padding: 1rem;
-      flex: 1;
-    }
-
-    .card-body h3 {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-body p {
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    .card-body a {
-      display: inline-block;
-      margin-top: 0.75rem;
-      text-decoration: none;
-      color: #00bcd4;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: #1e1e1e;
-      color: #bbb;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 4rem;
-    }
-  </style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>Blog & Centre d'Information - JFK Evolution | Expert en Télécommunications</title>
+    <meta content="Découvrez nos articles techniques, guides pratiques et actualités sur la fibre optique et les télécommunications. Expertise JFK Evolution depuis 2000." name="description"/>
+    
+    <!-- Favicon -->
+    <link href="assets/logo-orange.png" rel="icon" type="image/png"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo-orange.png" as="image">
 </head>
 <body>
-<header>
-<div style="display: flex; align-items: center;">
-<a href="index.html"><img alt="Logo" src="assets/logo-orange.png" style="height: 40px; margin-right: 10px;"/></a>
-<span style="font-size: 1.5rem;">JFK Evolution</span>
-</div>
-<nav>
-<a href="index.html#accueil">Accueil</a>
-<a href="index.html#services">Services</a>
-<a href="index.html#contact">Contact</a>
-</nav>
-</header>
-<main>
-<h1 style="font-size: 2.2rem;">Centre d'information &amp; Blog Technique</h1>
-<p style="font-size: 1.1rem; color: #555;">Explorez nos contenus techniques, conseils pratiques et actualités sur la fibre optique et les télécommunications.</p>
-<h2>💡 Guides et Explications</h2>
-<div class="grid">
-<div class="card">
-<img alt="FTTH vs FTTO" src="assets/fibre1.jpg"/>
-<div class="card-body">
-<h3>FTTH vs FTTO : Quelle différence ?</h3>
-<p>Découvrez les différences clés entre la fibre pour particuliers et celle pour professionnels.</p>
-<a href="articles/article-1.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="OTDR" src="assets/otdr.jpg"/>
-<div class="card-body">
-<h3>Comprendre l’OTDR en 3 minutes</h3>
-<p>Un outil incontournable pour analyser les réseaux fibre optique efficacement.</p>
-<a href="articles/article-2.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="Soudure fibre" src="assets/soudure.jpg"/>
-<div class="card-body">
-<h3>Checklist pour une soudure parfaite</h3>
-<p>Suivez ces étapes essentielles pour réussir vos soudures à chaque fois.</p>
-<a href="articles/article-3.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-</div>
-<h2>🛠️ Techniques de terrain</h2>
-<div class="grid">
-<div class="card">
-<img alt="Réflectométrie" src="assets/test-reflecto.jpg"/>
-<div class="card-body">
-<h3>Pourquoi tester la réflectométrie ?</h3>
-<p>Une bonne réflectométrie permet de localiser avec précision tout défaut réseau.</p>
-<a href="articles/article-4.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="Erreurs fibre" src="assets/erreurs-fibre.jpg"/>
-<div class="card-body">
-<h3>Les erreurs courantes en raccordement fibre</h3>
-<p>Évitez les pièges fréquents grâce à cette liste des erreurs classiques.</p>
-<a href="articles/article-5.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="Outils technicien" src="assets/outils.jpg"/>
-<div class="card-body">
-<h3>Le matériel indispensable pour un technicien fibre</h3>
-<p>Tout ce qu'il vous faut pour être opérationnel sur le terrain.</p>
-<a href="articles/article-6.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-</div>
-<h2>📘 Ressources complémentaires</h2>
-<div class="grid">
-<div class="card">
-<img alt="Lexique télécom" src="assets/lexique.jpg"/>
-<div class="card-body">
-<h3>Lexique de base des télécommunications</h3>
-<p>Un glossaire pratique pour bien comprendre les termes utilisés.</p>
-<a href="articles/article-20.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="Formation fibre" src="assets/formation.jpg"/>
-<div class="card-body">
-<h3>Formation continue pour techniciens</h3>
-<p>Les formations à suivre pour rester à jour dans un métier qui évolue.</p>
-<a href="articles/article-19.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-<div class="card">
-<img alt="Métiers fibre" src="assets/metiers.jpg"/>
-<div class="card-body">
-<h3>Les métiers de la fibre en 2025</h3>
-<p>Panorama des métiers liés au déploiement de la fibre optique.</p>
-<a href="articles/article-18.html" target="_blank">Lire l'article →</a>
-</div>
-</div>
-</div>
-<h2>📰 Actualités et Analyses</h2><div class="grid"><div class="card"><img alt="Comment bien débuter en fibre optique" src="assets/formation.jpg"/><div class="card-body"><h3>Comment bien débuter en fibre optique</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-7.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Les métiers autour de la fibre optique" src="assets/metiers.jpg"/><div class="card-body"><h3>Les métiers autour de la fibre optique</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-8.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Mesurer la qualité d’une connexion" src="assets/test-reflecto.jpg"/><div class="card-body"><h3>Mesurer la qualité d’une connexion</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-9.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Pourquoi la fibre est meilleure que l’ADSL" src="assets/fibre1.jpg"/><div class="card-body"><h3>Pourquoi la fibre est meilleure que l’ADSL</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-10.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Tester une installation avant la mise en service" src="assets/test-reflecto.jpg"/><div class="card-body"><h3>Tester une installation avant la mise en service</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-11.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Fibre en zones rurales : défis et solutions" src="assets/fibre1.jpg"/><div class="card-body"><h3>Fibre en zones rurales : défis et solutions</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-12.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Sécurité : précautions en fibre optique" src="assets/outils.jpg"/><div class="card-body"><h3>Sécurité : précautions en fibre optique</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-13.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Maintenance préventive sur les réseaux" src="assets/fibre1.jpg"/><div class="card-body"><h3>Maintenance préventive sur les réseaux</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-14.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Évolution des normes (2020-2025)" src="assets/lexique.jpg"/><div class="card-body"><h3>Évolution des normes (2020-2025)</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-15.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Fibre dédiée pour les entreprises" src="assets/fibre1.jpg"/><div class="card-body"><h3>Fibre dédiée pour les entreprises</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-16.html" target="_blank">Lire l'article →</a></div></div><div class="card"><img alt="Le rôle du NRO dans le réseau fibre" src="assets/outils.jpg"/><div class="card-body"><h3>Le rôle du NRO dans le réseau fibre</h3><p>Cliquez pour lire l’article complet.</p><a href="articles/article-17.html" target="_blank">Lire l'article →</a></div></div></div></main>
-<footer>
-<p>© 2025 JFK Evolution. Tous droits réservés.</p>
-</footer>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img alt="Logo" src="assets/logo-orange.png" loading="lazy">
+                    <span>JFK Evolution</span>
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="index.html#accueil" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="index.html#quisuisje" class="nav-link">Qui suis-je ?</a>
+                    <a href="index.html#clients" class="nav-link">Clients</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="padding: 6rem 0 4rem;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Blog & Centre d'Information</h1>
+                <p>Explorez nos contenus techniques, conseils pratiques et actualités sur la fibre optique et les télécommunications</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BLOG MAIN CONTENT ===== -->
+    <main class="section" id="blog">
+        <div class="container">
+            <!-- ===== GUIDES SECTION ===== -->
+            <div class="text-center mb-8">
+                <h2 class="fade-in">💡 Guides et Explications</h2>
+                <p class="fade-in">Articles techniques pour comprendre les fondamentaux</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="FTTH vs FTTO" src="assets/fibre1.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>FTTH vs FTTO : Quelle différence ?</h3>
+                        <p>Découvrez les différences clés entre la fibre pour particuliers et celle pour professionnels.</p>
+                        <a href="articles/article-1.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="OTDR" src="assets/otdr.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Comprendre l'OTDR en 3 minutes</h3>
+                        <p>Un outil incontournable pour analyser les réseaux fibre optique efficacement.</p>
+                        <a href="articles/article-2.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Soudure fibre" src="assets/soudure.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Checklist pour une soudure parfaite</h3>
+                        <p>Suivez ces étapes essentielles pour réussir vos soudures à chaque fois.</p>
+                        <a href="articles/article-3.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== TECHNIQUES SECTION ===== -->
+            <div class="text-center mb-8" style="margin-top: 4rem;">
+                <h2 class="fade-in">🛠️ Techniques de Terrain</h2>
+                <p class="fade-in">Conseils pratiques pour les techniciens</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Réflectométrie" src="assets/test-reflecto.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Pourquoi tester la réflectométrie ?</h3>
+                        <p>Une bonne réflectométrie permet de localiser avec précision tout défaut réseau.</p>
+                        <a href="articles/article-4.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Erreurs fibre" src="assets/erreurs-fibre.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Les erreurs courantes en raccordement fibre</h3>
+                        <p>Évitez les pièges fréquents grâce à cette liste des erreurs classiques.</p>
+                        <a href="articles/article-5.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Outils technicien" src="assets/outils.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Le matériel indispensable pour un technicien fibre</h3>
+                        <p>Tout ce qu'il vous faut pour être opérationnel sur le terrain.</p>
+                        <a href="articles/article-6.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== RESSOURCES SECTION ===== -->
+            <div class="text-center mb-8" style="margin-top: 4rem;">
+                <h2 class="fade-in">📘 Ressources Complémentaires</h2>
+                <p class="fade-in">Formation et documentation spécialisée</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Lexique télécom" src="assets/lexique.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Lexique de base des télécommunications</h3>
+                        <p>Un glossaire pratique pour bien comprendre les termes utilisés.</p>
+                        <a href="articles/article-20.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Formation fibre" src="assets/formation.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Formation continue pour techniciens</h3>
+                        <p>Les formations à suivre pour rester à jour dans un métier qui évolue.</p>
+                        <a href="articles/article-19.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Métiers fibre" src="assets/metiers.jpg" loading="lazy" style="width: 100%; height: 200px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Les métiers de la fibre en 2025</h3>
+                        <p>Panorama des métiers liés au déploiement de la fibre optique.</p>
+                        <a href="articles/article-18.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ACTUALITES SECTION ===== -->
+            <div class="text-center mb-8" style="margin-top: 4rem;">
+                <h2 class="fade-in">📰 Actualités et Analyses</h2>
+                <p class="fade-in">Dernières nouvelles et tendances du secteur</p>
+            </div>
+            
+            <div class="grid grid-4">
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Comment bien débuter en fibre optique" src="assets/formation.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Comment bien débuter en fibre optique</h3>
+                        <p>Guide complet pour les débutants dans le domaine de la fibre optique.</p>
+                        <a href="articles/article-7.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Les métiers autour de la fibre optique" src="assets/metiers.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Les métiers autour de la fibre optique</h3>
+                        <p>Découvrez les différentes carrières possibles dans ce secteur en pleine expansion.</p>
+                        <a href="articles/article-8.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Mesurer la qualité d'une connexion" src="assets/test-reflecto.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Mesurer la qualité d'une connexion</h3>
+                        <p>Techniques et outils pour évaluer la performance de vos installations fibre.</p>
+                        <a href="articles/article-9.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Pourquoi la fibre est meilleure que l'ADSL" src="assets/fibre1.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Pourquoi la fibre est meilleure que l'ADSL</h3>
+                        <p>Comparaison détaillée entre les deux technologies de connexion internet.</p>
+                        <a href="articles/article-10.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Tester une installation avant la mise en service" src="assets/test-reflecto.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Tester une installation avant la mise en service</h3>
+                        <p>Procédures de test essentielles pour garantir la fiabilité de votre réseau.</p>
+                        <a href="articles/article-11.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Fibre en zones rurales : défis et solutions" src="assets/fibre1.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Fibre en zones rurales : défis et solutions</h3>
+                        <p>Les particularités du déploiement fibre dans les zones moins densément peuplées.</p>
+                        <a href="articles/article-12.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Sécurité : précautions en fibre optique" src="assets/outils.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Sécurité : précautions en fibre optique</h3>
+                        <p>Mesures de sécurité essentielles lors des interventions sur fibre optique.</p>
+                        <a href="articles/article-13.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Maintenance préventive sur les réseaux" src="assets/fibre1.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Maintenance préventive sur les réseaux</h3>
+                        <p>Stratégies de maintenance pour éviter les pannes et optimiser les performances.</p>
+                        <a href="articles/article-14.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== MORE ARTICLES SECTION ===== -->
+            <div class="grid grid-4" style="margin-top: 2rem;">
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Évolution des normes (2020-2025)" src="assets/lexique.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Évolution des normes (2020-2025)</h3>
+                        <p>Les nouvelles réglementations et standards dans le domaine des télécommunications.</p>
+                        <a href="articles/article-15.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Fibre dédiée pour les entreprises" src="assets/fibre1.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Fibre dédiée pour les entreprises</h3>
+                        <p>Solutions fibre optique adaptées aux besoins spécifiques des entreprises.</p>
+                        <a href="articles/article-16.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="card fade-in">
+                    <div style="position: relative; overflow: hidden; border-radius: 0.5rem; margin: -2rem -2rem 1rem -2rem;">
+                        <img alt="Le rôle du NRO dans le réseau fibre" src="assets/outils.jpg" loading="lazy" style="width: 100%; height: 150px; object-fit: cover;">
+                    </div>
+                    <div class="card-body">
+                        <h3>Le rôle du NRO dans le réseau fibre</h3>
+                        <p>Comprendre l'importance des Nœuds de Raccordement Optique dans l'infrastructure fibre.</p>
+                        <a href="articles/article-17.html" target="_blank" class="btn btn-primary" style="margin-top: 1rem;">
+                            <i class="fas fa-book-open"></i>
+                            Lire l'article
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Besoin d'Expertise Technique ?</h2>
+                <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 2rem;">Nos experts sont là pour vous accompagner dans vos projets de télécommunications</p>
+                <div class="hero-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Contactez-nous
+                    </a>
+                    <a href="services.html" class="btn btn-secondary">
+                        <i class="fas fa-cogs"></i>
+                        Nos Services
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JFK Evolution</h3>
+                    <p>Expert en télécommunications depuis 2000, spécialisé en fibre optique, réseaux et télécommunications à Lyon et région.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="services.html">Installation Fibre</a></li>
+                        <li><a href="services.html">Maintenance Réseaux</a></li>
+                        <li><a href="services.html">Contrôle de Qualité</a></li>
+                        <li><a href="services.html">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Lyon, France</p>
+                    <p>📧 jfkevolution@gmail.com</p>
+                    <p>🌐 Région Auvergne-Rhône-Alpes</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 JFK Evolution. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+    
+    <!-- Loading animation CSS -->
+    <style>
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #374151;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+        /* Custom blog styling */
+        .card {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .card-body p {
+            flex: 1;
+        }
+        
+        .card img {
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover img {
+            transform: scale(1.05);
+        }
+    </style>
 </body>
 </html>

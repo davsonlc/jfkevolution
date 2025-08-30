@@ -2,29 +2,325 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Nos Services - JFK Evolution</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - JFK Evolution | Expert en Télécommunications</title>
+    <meta name="description" content="Découvrez nos services complets en télécommunications : installation fibre, maintenance réseaux, formation et consulting. Expert à Lyon depuis 2000.">
+    
+    <!-- Favicon -->
+    <link href="assets/logo-orange.png" rel="icon" type="image/png"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo-orange.png" as="image">
 </head>
 <body>
-  <header>
-    <img src="assets/logo-orange.png" alt="Logo JFK" width="120" />
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-  <h1>Nos Services</h1>
-  <ul>
-    <li>Consultation en réseaux</li>
-    <li>Déploiement fibre optique</li>
-    <li>Ingénierie et câblage</li>
-  </ul>
-  <div>
-    <img src="assets/fibra-2.jpg" width="400" />
-    <img src="assets/fibra-5.webp" width="400" />
-    <img src="assets/fibra-6.jpg" width="400" />
-    <img src="assets/fibra-7.jpeg" width="400" />
-    <img src="assets/fusionneur.jpg" width="400" />
-  </div>
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo-orange.png" alt="JFK Evolution Logo" loading="lazy">
+                    <span>JFK Evolution</span>
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="index.html#accueil" class="nav-link">Accueil</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="index.html#quisuisje" class="nav-link">Qui suis-je ?</a>
+                    <a href="index.html#clients" class="nav-link">Clients</a>
+                    <a href="index.html#contact" class="nav-link">Contact</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="padding: 6rem 0 4rem;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Nos Services</h1>
+                <p>Solutions complètes et professionnelles en télécommunications pour tous vos besoins</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES DETAILED SECTION ===== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Services Principaux</h2>
+                <p class="fade-in">Expertise technique et solutions sur mesure pour vos projets</p>
+            </div>
+            
+            <div class="grid grid-2" style="gap: 3rem;">
+                <!-- Service 1 -->
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-fiber-optic"></i>
+                    </div>
+                    <h3>Installation Fibre Optique</h3>
+                    <p>Installation complète de réseaux fibre optique FTTH/FTTO pour entreprises et particuliers.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Raccordement FTTH/FTTO
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Câblage structuré
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Tests et certification
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Maintenance & Dépannage</h3>
+                    <p>Service de maintenance préventive et curative pour tous types de réseaux télécom.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Diagnostic réseau
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Maintenance préventive
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Dépannage 24/7
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Contrôle Qualité</h3>
+                    <p>Audit technique et contrôle qualité pour garantir la conformité aux normes en vigueur.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Tests réflectométriques
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Vérification conformité
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Rapports détaillés
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Supervision de Chantiers</h3>
+                    <p>Gestion complète de projets télécom avec coordination d'équipes et suivi qualité.</p>
+                    <ul style="list-style: none; padding: 0; margin-top: 1rem;">
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Planification projet
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Coordination équipes
+                        </li>
+                        <li style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <i class="fas fa-check" style="color: #10b981;"></i>
+                            Suivi qualité
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== TECHNICAL EXPERTISE SECTION ===== -->
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Expertise Technique</h2>
+                <p class="fade-in">Technologies et outils de pointe pour des résultats optimaux</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Technologies Fibre</h3>
+                    <p>FTTH, FTTO, GPON, XGS-PON, fibre monomode et multimode</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Réseaux Sans Fil</h3>
+                    <p>WiFi 6, réseaux mesh, point-to-point, solutions d'entreprise</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Infrastructure Réseau</h3>
+                    <p>Switches, routeurs, serveurs, stockage, virtualisation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Nos Réalisations</h2>
+                <p class="fade-in">Galerie de photos de nos installations et chantiers</p>
+            </div>
+            
+            <div class="grid grid-4" style="gap: 1.5rem;">
+                <div class="fade-in">
+                    <img src="assets/fibra-2.jpg" alt="Installation fibre optique" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-5.webp" alt="Câblage fibre" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-6.jpg" alt="Infrastructure réseau" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-7.jpeg" alt="Maintenance réseau" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fusionneur.jpg" alt="Soudure fibre" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-1.jpg" alt="Test fibre" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-3.jpg" alt="Installation équipements" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+                <div class="fade-in">
+                    <img src="assets/fibra-4.jpg" alt="Chantier fibre" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Prêt à Démarrer Votre Projet ?</h2>
+                <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 2rem;">Contactez-nous pour un devis personnalisé et gratuit</p>
+                <div class="hero-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Demander un devis
+                    </a>
+                    <a href="index.html#accueil" class="btn btn-secondary">
+                        <i class="fas fa-home"></i>
+                        Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JFK Evolution</h3>
+                    <p>Expert en télécommunications depuis 2000, spécialisé en fibre optique, réseaux et télécommunications à Lyon et région.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#services">Installation Fibre</a></li>
+                        <li><a href="#services">Maintenance Réseaux</a></li>
+                        <li><a href="#services">Contrôle de Qualité</a></li>
+                        <li><a href="#services">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Lyon, France</p>
+                    <p>📧 jfkevolution@gmail.com</p>
+                    <p>🌐 Région Auvergne-Rhône-Alpes</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p><a href="confidentialite.html" style="color:#bbb;text-decoration:underline;">Politique de confidentialité</a></p>
+                <p>© 2025 JFK Evolution. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+    
+    <!-- Loading animation CSS -->
+    <style>
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #374151;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    </style>
 </body>
 </html>

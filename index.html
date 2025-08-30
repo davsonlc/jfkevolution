@@ -1,287 +1,417 @@
 
 <!DOCTYPE html>
-
 <html lang="fr">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>JFK Evolution | Expert en Télécommunications à Lyon - Installation Fibre &amp; Réseaux</title>
-<meta content="JFK Evolution est spécialisé en télécommunications à Lyon depuis 2000 : installation de fibre optique, maintenance de réseaux, et supervision de chantiers." name="description"/>
-<meta content="index, follow" name="robots"/>
-<meta content="JFK Evolution" name="author"/>
-<meta content="fr" name="language"/>
-<meta content="#00bcd4" name="theme-color"/>
-<!-- Open Graph / Facebook -->
-<meta content="JFK Evolution | Télécom à Lyon" property="og:title"/>
-<meta content="Installation de fibre optique, maintenance réseaux et expertises télécom à Lyon." property="og:description"/>
-<meta content="https://www.jfkevolution.com/assets/logo-orange.png" property="og:image"/>
-<meta content="https://www.jfkevolution.com" property="og:url"/>
-<meta content="website" property="og:type"/>
-<!-- Twitter -->
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="JFK Evolution | Télécom à Lyon" name="twitter:title"/>
-<meta content="Installation de fibre optique, maintenance réseaux et expertises télécom à Lyon." name="twitter:description"/>
-<meta content="https://www.jfkevolution.com/assets/logo-orange.png" name="twitter:image"/>
-<link href="assets/logo-orange.png" rel="icon" type="image/png"/>
-<style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      color: #222;
-      background-color: #f9f9f9;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #1e1e1e;
-      color: #fff;
-      padding: 1rem 2rem;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      font-size: 1.5rem;
-    }
-
-    nav a {
-      margin-left: 1.5rem;
-      text-decoration: none;
-      color: #fff;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: #00bcd4;
-    }
-
-    section {
-      padding: 4rem 2rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .hero {
-      background: linear-gradient(to right, #00bcd4, #2196f3);
-      color: white;
-      padding: 6rem 2rem;
-      text-align: center;
-    }
-
-    .hero h2 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .card {
-      background: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-
-    .carousel img {
-      height: 100px;
-      object-fit: contain;
-      flex-shrink: 0;
-      border-radius: 6px;
-      background: white;
-      padding: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    footer {
-      background-color: #1e1e1e;
-      color: #bbb;
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    @media (max-width: 600px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-    }
-  
-
-/* Menu mobile toggle */
-#menu-toggle {
-  display: none;
-  cursor: pointer;
-  font-size: 2rem;
-  color: white;
-  background: none;
-  border: none;
-}
-
-@media (max-width: 600px) {
-  #menu-toggle {
-    display: block;
-  }
-
-  header nav {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  header nav.open {
-    display: flex;
-  }
-
-  header nav a {
-    margin: 0.5rem 0;
-  }
-}
-</style>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <title>JFK Evolution | Expert en Télécommunications à Lyon - Installation Fibre & Réseaux</title>
+    <meta content="JFK Evolution est spécialisé en télécommunications à Lyon depuis 2000 : installation de fibre optique, maintenance de réseaux, et supervision de chantiers." name="description"/>
+    <meta content="index, follow" name="robots"/>
+    <meta content="JFK Evolution" name="author"/>
+    <meta content="fr" name="language"/>
+    <meta content="#1e40af" name="theme-color"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta content="JFK Evolution | Télécom à Lyon" property="og:title"/>
+    <meta content="Installation de fibre optique, maintenance réseaux et expertises télécom à Lyon." property="og:description"/>
+    <meta content="https://www.jfkevolution.com/assets/logo-orange.png" property="og:image"/>
+    <meta content="https://www.jfkevolution.com" property="og:url"/>
+    <meta content="website" property="og:type"/>
+    
+    <!-- Twitter -->
+    <meta content="summary_large_image" name="twitter:card"/>
+    <meta content="JFK Evolution | Télécom à Lyon" name="twitter:title"/>
+    <meta content="Installation de fibre optique, maintenance réseaux et expertises télécom à Lyon." name="twitter:description"/>
+    <meta content="https://www.jfkevolution.com/assets/logo-orange.png" name="twitter:image"/>
+    
+    <!-- Favicon -->
+    <link href="assets/logo-orange.png" rel="icon" type="image/png"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo-orange.png" as="image">
+    <link rel="preload" href="assets/qui je suis.jpg" as="image">
 </head>
 <body>
-<header>
-<button id="menu-toggle">☰</button><div style="display: flex; align-items: center;"><img alt="Logo" loading="lazy" src="assets/logo-orange.png" style="height: 40px; margin-right: 10px;"/><span style="font-size: 1.5rem;">JFK Evolution</span></div>
-<nav>
-<a href="#accueil">Accueil</a>
-<a href="#services">Services</a>
-<a href="#quisuisje">Qui suis-je ?</a>
-<a href="#clients">Clients</a>
-<a href="#contact">Contact</a>
-<a href="blog.html">Blog</a>
-<a href="portfolio.html">Portfolio</a>
-</nav>
-</header>
-<section class="hero" id="accueil">
-<h2>Expert en Télécommunications</h2>
-<p>Depuis 2000, JFK Evolution fournit des services fiables et professionnels à Lyon et région.</p>
-</section>
-<section id="services">
-<h2>Nos Services</h2>
-<div class="grid">
-<div class="card">
-<h3>Installation Fibre</h3>
-<p>Pose et raccordement FTTH/FTTO pour entreprises et particuliers.</p>
-</div>
-<div class="card">
-<h3>Maintenance Réseaux</h3>
-<p>Diagnostic, optimisation et dépannage des réseaux télécom.</p>
-</div>
-<div class="card">
-<h3>Contrôle de Qualité</h3>
-<p>Inspection rigoureuse des installations pour garantir la conformité aux normes techniques et assurer une qualité de service irréprochable.</p>
-</div>
-</div>
-</section>
-<section id="quisuisje">
-<h2>Qui suis-je ?</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-<div style="flex: 1; min-width: 250px;">
-<p>
-        Depuis 2000, je suis connu pour être l'un des meilleurs Entrepreneur en télécommunication de Lyon.
-        Je fournis à mes clients un large éventail de services pour tous leurs besoins en rénovation et réparation.
-      </p>
-<p>
-        Que vous cherchiez à rénover votre espace existant ou à y ajouter une extension, je suis heureux de vous aider à atteindre les résultats que vous cherchez.
-        Contactez-moi dès aujourd'hui et obtenez un devis gratuit.
-      </p>
-</div>
-<div style="flex: 1; min-width: 250px;">
-<img alt="Qui je suis" loading="lazy" src="assets/qui je suis.jpg" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-</img></div>
-</div>
-<br/><br/>
-<h2>JFK EVOLUTION</h2>
-<div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
-<div style="flex: 1; min-width: 250px;">
-<img alt="Déploiement fibre" loading="lazy" src="assets/déploiement fibre.jpeg" style="width: 100%; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);"/>
-</div>
-<div style="flex: 1; min-width: 250px;">
-<p>
-      Chez JFK EVOLUTION, nous mettons notre expertise au service de vos projets les plus ambitieux.
-      Basés à Lyon, nous accompagnons entreprises, collectivités et opérateurs dans le déploiement de solutions de télécommunication sur mesure.
-    </p>
-<p>
-      Notre savoir-faire couvre l'installation de la fibre optique, la maintenance des réseaux, la supervision de chantiers techniques,
-      ainsi que la formation spécialisée pour les professionnels du secteur.
-    </p>
-</div>
-</div>
-</section>
+    <!-- ===== LOADING SCREEN ===== -->
+    <div class="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #1e40af; display: flex; align-items: center; justify-content: center; z-index: 10000; transition: opacity 0.5s ease;">
+        <div style="text-align: center; color: white;">
+            <img src="assets/logo-orange.png" alt="JFK Evolution" style="width: 80px; height: 80px; margin-bottom: 1rem;">
+            <div style="font-size: 1.5rem; font-weight: 600;">JFK Evolution</div>
+            <div style="margin-top: 1rem; width: 40px; height: 4px; background: rgba(255,255,255,0.3); border-radius: 2px; overflow: hidden;">
+                <div style="width: 100%; height: 100%; background: white; animation: loading 1.5s ease-in-out infinite;"></div>
+            </div>
+        </div>
+    </div>
 
-<section id="clients">
-<h2>Nos Clients</h2>
-<div class="carousel">
-<a href="https://www.jfkevolution.com" target="_blank"><img alt="jfkevolution loading="lazy" src="assets/client-1.avif"/></a>
-<a href="https://www.axione.fr" target="_blank"><img alt="Axione" loading="lazy" src="assets/client-axione.avif"/></a>
-<a href="https://www.circet.fr" target="_blank"><img alt="Circet" loading="lazy" src="assets/client-circet.avif"/></a>
-<a href="https://www.altitudeinfra.fr" target="_blank"><img alt="Covage" loading="lazy" src="assets/client-covage.avif"/></a>
-<a href="https://www.ert-technologies.fr" target="_blank"><img alt="ERT" loading="lazy" src="assets/client-ert.avif"/></a>
-<a href="https://sobeca.fr" target="_blank"><img alt="Sobeca" loading="lazy" src="assets/client-sobeca.avif"/></a>
-<a href="https://www.sogetrel.fr" target="_blank"><img alt="Sogetrel" loading="lazy" src="assets/client-sogetrel.avif"/></a>
-<a href="https://www.spie.com" target="_blank"><img alt="Spie" loading="lazy" src="assets/client-spie.avif"/></a>
-</div>
-</section>
-<section id="localisation">
-<h2>Où sommes-nous ?</h2>
-<p>Nous sommes basés à Lyon, au cœur de la région Auvergne-Rhône-Alpes.</p>
-<div style="width: 100%; height: 400px; margin-top: 1rem;">
-<iframe allowfullscreen="" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11197.56428008156!2d4.82565955!3d45.7580188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4b1a5ed8d1%3A0xf226d2390ae3bf5d!2sLyon!5e0!3m2!1sfr!2sfr!4v1720354872222!5m2!1sfr!2sfr" style="border:0" width="100%">
-</iframe>
-</div>
-</section>
-<section id="contact">
-<h2>Contactez-Nous</h2>
-<p>Email : <a href="mailto:jfkevolution@gmail.com">jfkevolution@gmail.com</a></p>
-<p>Lyon, France</p>
-</section>
-<footer>
-<p><a href="confidentialite.html" style="color:#bbb;text-decoration:underline;">Politique de confidentialité</a></p>
-<p>© 2025 JFK Evolution. Tous droits réservés.</p>
-</footer>
-<!-- Cloudflare Web Analytics --><script data-cf-beacon='{"token": "e96e3fb87ab544fa9412de418eb56cce"}' defer="" src="https://static.cloudflareinsights.com/beacon.min.js"></script><!-- End Cloudflare Web Analytics -->
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="#accueil" class="logo">
+                    <img src="assets/logo-orange.png" alt="JFK Evolution Logo" loading="lazy">
+                    <span>JFK Evolution</span>
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="#accueil" class="nav-link">Accueil</a>
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#quisuisje" class="nav-link">Qui suis-je ?</a>
+                    <a href="#clients" class="nav-link">Clients</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const toggle = document.getElementById("menu-toggle");
-    const nav = document.querySelector("header nav");
-    toggle.addEventListener("click", () => {
-      nav.classList.toggle("open");
-    });
-  });
-</script>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="accueil">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Expert en Télécommunications</h1>
+                <p>Depuis 2000, JFK Evolution fournit des services fiables et professionnels à Lyon et région. Spécialiste en fibre optique, réseaux et télécommunications.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">
+                        <i class="fas fa-cogs"></i>
+                        Nos Services
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        Contactez-nous
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Nos Services</h2>
+                <p class="fade-in">Solutions complètes en télécommunications pour entreprises et particuliers</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-fiber-optic"></i>
+                    </div>
+                    <h3>Installation Fibre</h3>
+                    <p>Pose et raccordement FTTH/FTTO pour entreprises et particuliers. Installation professionnelle avec garantie de qualité.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Maintenance Réseaux</h3>
+                    <p>Diagnostic, optimisation et dépannage des réseaux télécom. Surveillance proactive et maintenance préventive.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Contrôle de Qualité</h3>
+                    <p>Inspection rigoureuse des installations pour garantir la conformité aux normes techniques et assurer une qualité de service irréprochable.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Supervision de Chantiers</h3>
+                    <p>Gestion complète de projets télécom, coordination d'équipes et suivi qualité sur site.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation Spécialisée</h3>
+                    <p>Formation continue pour techniciens et professionnels du secteur des télécommunications.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Audit & Consulting</h3>
+                    <p>Analyse de l'existant, recommandations d'amélioration et accompagnement stratégique.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="section" id="quisuisje" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Qui suis-je ?</h2>
+                <p class="fade-in">Un expert passionné des télécommunications depuis plus de 20 ans</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="slide-in-left">
+                    <div class="about-image">
+                        <img src="assets/qui je suis.jpg" alt="Qui je suis" loading="lazy">
+                    </div>
+                </div>
+                
+                <div class="slide-in-right">
+                    <h3>Expert en Télécommunications</h3>
+                    <p>Depuis 2000, je suis connu pour être l'un des meilleurs Entrepreneurs en télécommunication de Lyon. Je fournis à mes clients un large éventail de services pour tous leurs besoins en rénovation et réparation.</p>
+                    <p>Que vous cherchiez à rénover votre espace existant ou à y ajouter une extension, je suis heureux de vous aider à atteindre les résultats que vous cherchez. Contactez-moi dès aujourd'hui et obtenez un devis gratuit.</p>
+                    
+                    <div class="mt-6">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-phone"></i>
+                            Demander un devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== JFK EVOLUTION SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">JFK EVOLUTION</h2>
+                <p class="fade-in">Votre partenaire de confiance en télécommunications</p>
+            </div>
+            
+            <div class="about-content" style="grid-template-columns: 1fr 1fr;">
+                <div class="slide-in-left">
+                    <h3>Excellence Technique</h3>
+                    <p>Chez JFK EVOLUTION, nous mettons notre expertise au service de vos projets les plus ambitieux. Basés à Lyon, nous accompagnons entreprises, collectivités et opérateurs dans le déploiement de solutions de télécommunication sur mesure.</p>
+                    <p>Notre savoir-faire couvre l'installation de la fibre optique, la maintenance des réseaux, la supervision de chantiers techniques, ainsi que la formation spécialisée pour les professionnels du secteur.</p>
+                </div>
+                
+                <div class="slide-in-right">
+                    <div class="about-image">
+                        <img src="assets/déploiement fibre.jpeg" alt="Déploiement fibre" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLIENTS SECTION ===== -->
+    <section class="section" id="clients" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Nos Clients</h2>
+                <p class="fade-in">Ils nous font confiance pour leurs projets télécom</p>
+            </div>
+            
+            <div class="clients-grid">
+                <a href="https://www.jfkevolution.com" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-1.avif" alt="JFK Evolution" loading="lazy">
+                </a>
+                <a href="https://www.axione.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-axione.avif" alt="Axione" loading="lazy">
+                </a>
+                <a href="https://www.circet.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-circet.avif" alt="Circet" loading="lazy">
+                </a>
+                <a href="https://www.altitudeinfra.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-covage.avif" alt="Covage" loading="lazy">
+                </a>
+                <a href="https://www.ert-technologies.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-ert.avif" alt="ERT" loading="lazy">
+                </a>
+                <a href="https://sobeca.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-sobeca.avif" alt="Sobeca" loading="lazy">
+                </a>
+                <a href="https://www.sogetrel.fr" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-sogetrel.avif" alt="Sogetrel" loading="lazy">
+                </a>
+                <a href="https://www.spie.com" target="_blank" class="client-logo fade-in">
+                    <img src="assets/client-spie.avif" alt="Spie" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== LOCATION SECTION ===== -->
+    <section class="section" id="localisation">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Où sommes-nous ?</h2>
+                <p class="fade-in">Nous sommes basés à Lyon, au cœur de la région Auvergne-Rhône-Alpes</p>
+            </div>
+            
+            <div class="map-container fade-in" style="width: 100%; height: 400px; margin-top: 1rem; border-radius: 1rem; overflow: hidden; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11197.56428008156!2d4.82565955!3d45.7580188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea4b1a5ed8d1%3A0xf226d2390ae3bf5d!2sLyon!5e0!3m2!1sfr!2sfr!4v1720354872222!5m2!1sfr!2sfr" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="section" id="contact" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Contactez-Nous</h2>
+                <p class="fade-in">Prêt à démarrer votre projet ? Parlons-en !</p>
+            </div>
+            
+            <div class="text-center fade-in">
+                <div class="contact-info-simple">
+                    <div class="contact-grid">
+                        <div class="contact-item-simple">
+                            <div class="contact-icon-simple">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details-simple">
+                                <strong>Email</strong><br>
+                                <a href="mailto:jfkevolution@gmail.com" class="contact-link-simple">jfkevolution@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-simple">
+                            <div class="contact-icon-simple">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details-simple">
+                                <strong>Localisation</strong><br>
+                                <span>Lyon, France</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item-simple">
+                            <div class="contact-icon-simple">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details-simple">
+                                <strong>Disponibilité</strong><br>
+                                <span>Lundi - Vendredi: 8h - 18h</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="contact-description">N'hésitez pas à nous contacter pour toute question ou demande de devis. Notre équipe d'experts est là pour vous accompagner dans vos projets de télécommunications.</p>
+                </div>
+            </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center mt-10">
+                    <div class="why-choose-us fade-in">
+                        <h3 style="margin-bottom: 2rem; color: #1e40af;">Prêt à Démarrer ?</h3>
+                        <p style="margin-bottom: 2rem; font-size: 1.1rem;">Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé</p>
+                        <div class="hero-buttons">
+                            <a href="mailto:jfkevolution@gmail.com" class="btn btn-primary">
+                                <i class="fas fa-envelope"></i>
+                                Nous contacter par email
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">
+                                <i class="fas fa-info-circle"></i>
+                                Plus d'informations
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JFK Evolution</h3>
+                    <p>Expert en télécommunications depuis 2000, spécialisé en fibre optique, réseaux et télécommunications à Lyon et région.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="#services">Installation Fibre</a></li>
+                        <li><a href="#services">Maintenance Réseaux</a></li>
+                        <li><a href="#services">Contrôle de Qualité</a></li>
+                        <li><a href="#services">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mailto:jfkevolution@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Lyon, France</p>
+                    <p>📧 jfkevolution@gmail.com</p>
+                    <p>🌐 Région Auvergne-Rhône-Alpes</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p><a href="confidentialite.html" style="color:#bbb;text-decoration:underline;">Politique de confidentialité</a></p>
+                <p>© 2025 JFK Evolution. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+    
+    <!-- Cloudflare Web Analytics -->
+    <script data-cf-beacon='{"token": "e96e3fb87ab544fa9412de418eb56cce"}' defer src="https://static.cloudflareinsights.com/beacon.min.js"></script>
+    
+    <!-- Loading animation CSS -->
+    <style>
+        @keyframes loading {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #374151;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    </style>
 </body>
 </html>

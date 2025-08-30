@@ -1,4 +1,63 @@
+# ===== ROBOTS.TXT - JFK EVOLUTION =====
+# Configuration pour les moteurs de recherche
+# Expert en télécommunications à Lyon depuis 2000
+
 User-agent: *
 Allow: /
 
+# ===== PAGES PRINCIPALES =====
+Allow: /index.html
+Allow: /services.html
+Allow: /contact.html
+Allow: /blog.html
+Allow: /portfolio.html
+Allow: /confidentialite.html
+
+# ===== ARTICLES DU BLOG =====
+Allow: /articles/
+Allow: /articles/*.html
+
+# ===== ASSETS ET RESSOURCES =====
+Allow: /assets/
+Allow: /assets/*.png
+Allow: /assets/*.jpg
+Allow: /assets/*.jpeg
+Allow: /assets/*.webp
+Allow: /assets/*.avif
+
+# ===== FICHIERS TECHNIQUES =====
+Allow: /style.css
+Allow: /script.js
+Allow: /sitemap.xml
+
+# ===== PAGES À EXCLURE =====
+Disallow: /404.html
+Disallow: /LICENSE
+
+# ===== SITEMAP =====
 Sitemap: https://www.jfkevolution.com/sitemap.xml
+
+# ===== CRAWL DELAY =====
+# Délai entre les requêtes (en secondes)
+Crawl-delay: 1
+
+# ===== RÈGLES SPÉCIFIQUES =====
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# DuckDuckBot
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 2
+
+# ===== COMMENTAIRES =====
+# Ce fichier robots.txt permet aux moteurs de recherche
+# d'indexer le contenu du site JFK Evolution
+# tout en respectant les bonnes pratiques SEO

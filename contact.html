@@ -2,19 +2,292 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Contactez-nous - JFK Evolution</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous - JFK Evolution | Expert en Télécommunications</title>
+    <meta name="description" content="Contactez JFK Evolution pour vos projets de télécommunications. Devis gratuit, installation fibre, maintenance réseaux à Lyon et région.">
+    
+    <!-- Favicon -->
+    <link href="assets/logo-blue.png" rel="icon" type="image/png"/>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/logo-blue.png" as="image">
 </head>
 <body>
-  <header>
-    <img src="assets/logo-blue.png" alt="Logo JFK" width="120" />
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="services.html">Services</a>
-    </nav>
-  </header>
-  <h1>Contactez-nous</h1>
-  <p>Envoyez-nous un message à contact@jfkevolution.com</p>
-  <img src="assets/fibra-3.jpg" width="500" />
+    <!-- ===== HEADER & NAVIGATION ===== -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <img src="assets/logo-blue.png" alt="JFK Evolution Logo" loading="lazy">
+                    <span>JFK Evolution</span>
+                </a>
+                
+                <nav class="nav-menu">
+                    <a href="index.html#accueil" class="nav-link">Accueil</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="index.html#quisuisje" class="nav-link">Qui suis-je ?</a>
+                    <a href="index.html#clients" class="nav-link">Clients</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="blog.html" class="nav-link">Blog</a>
+                    <a href="portfolio.html" class="nav-link">Portfolio</a>
+                </nav>
+                
+                <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" style="padding: 6rem 0 4rem;">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Contactez-Nous</h1>
+                <p>Prêt à démarrer votre projet de télécommunications ? Parlons-en !</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT MAIN SECTION ===== -->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Informations de Contact</h2>
+                <p class="fade-in mb-6">Notre équipe d'experts est là pour vous accompagner dans tous vos projets de télécommunications. N'hésitez pas à nous contacter pour un devis gratuit et personnalisé.</p>
+            </div>
+            
+            <!-- Contact Information Grid -->
+            <div class="grid grid-2" style="gap: 3rem; max-width: 800px; margin: 0 auto;">
+                <!-- Left Column -->
+                <div class="slide-in-left">
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Email</strong><br>
+                                <a href="mailto:jfkevolution@gmail.com" class="contact-link">jfkevolution@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Localisation</strong><br>
+                                <span>Lyon, France</span><br>
+                                <span class="contact-subtitle">Région Auvergne-Rhône-Alpes</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="slide-in-right">
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Disponibilité</strong><br>
+                                <span>Lundi - Vendredi: 8h - 18h</span><br>
+                                <span class="contact-subtitle">Urgences: 24h/24 sur appel</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <strong>Téléphone</strong><br>
+                                <span>Sur demande</span><br>
+                                <span class="contact-subtitle">Contactez-nous par email</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Why Choose Us Section -->
+            <div class="text-center mt-10">
+                <div class="why-choose-us fade-in">
+                    <h3 style="margin-bottom: 2rem; color: #1e40af;">Pourquoi nous choisir ?</h3>
+                    <div class="grid grid-4" style="gap: 2rem; max-width: 900px; margin: 0 auto;">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                            <p>Plus de 20 ans d'expérience</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                            <p>Devis gratuit et personnalisé</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                            <p>Garantie qualité</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle" style="color: #10b981; font-size: 1.5rem; margin-bottom: 0.5rem;"></i>
+                            <p>Service client réactif</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ADDITIONAL INFO SECTION ===== -->
+    <section class="section" style="background: #f8fafc;">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Informations Complémentaires</h2>
+                <p class="fade-in">Tout ce que vous devez savoir pour bien préparer votre projet</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Délais de Réponse</h3>
+                    <p>Nous répondons à toutes les demandes dans les 24h ouvrables. Pour les urgences, contactez-nous directement.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Devis Gratuit</h3>
+                    <p>Tous nos devis sont gratuits et sans engagement. Nous vous proposons des solutions adaptées à votre budget.</p>
+                </div>
+                
+                <div class="card fade-in">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Garantie Qualité</h3>
+                    <p>Tous nos travaux sont garantis et assurés. Nous utilisons uniquement des matériaux certifiés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== IMAGE SECTION ===== -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-8">
+                <h2 class="fade-in">Notre Expertise en Images</h2>
+                <p class="fade-in">Découvrez nos installations et chantiers en photos</p>
+            </div>
+            
+            <div class="fade-in" style="text-align: center;">
+                <img src="assets/fibra-3.jpg" alt="Installation fibre optique" loading="lazy" style="max-width: 100%; height: auto; border-radius: 1rem; box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);">
+                <p style="margin-top: 1rem; color: #6b7280; font-style: italic;">Installation professionnelle de fibre optique - Chantier JFK Evolution</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA SECTION ===== -->
+    <section class="section" style="background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%); color: white;">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="fade-in">Prêt à Démarrer ?</h2>
+                <p class="fade-in" style="font-size: 1.2rem; margin-bottom: 2rem;">Contactez-nous dès aujourd'hui pour un devis gratuit et personnalisé</p>
+                <div class="hero-buttons">
+                    <a href="mailto:jfkevolution@gmail.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        Nous contacter par email
+                    </a>
+                    <a href="index.html#accueil" class="btn btn-secondary">
+                        <i class="fas fa-home"></i>
+                        Retour à l'accueil
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>JFK Evolution</h3>
+                    <p>Expert en télécommunications depuis 2000, spécialisé en fibre optique, réseaux et télécommunications à Lyon et région.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="services.html">Installation Fibre</a></li>
+                        <li><a href="services.html">Maintenance Réseaux</a></li>
+                        <li><a href="services.html">Contrôle de Qualité</a></li>
+                        <li><a href="services.html">Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Liens Utiles</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="confidentialite.html">Confidentialité</a></li>
+                        <li><a href="mailto:jfkevolution@gmail.com">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>📍 Lyon, France</p>
+                    <p>📧 jfkevolution@gmail.com</p>
+                    <p>🌐 Région Auvergne-Rhône-Alpes</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p><a href="confidentialite.html" style="color:#bbb;text-decoration:underline;">Politique de confidentialité</a></p>
+                <p>© 2025 JFK Evolution. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPTS ===== -->
+    <script src="script.js"></script>
+    
+    <!-- Loading animation CSS -->
+    <style>
+        .mobile-menu-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: #374151;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(1) {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-toggle.active span:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+        
+
+    </style>
 </body>
 </html>
